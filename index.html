@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link type="text/css" rel="stylesheet" href="css/commonAnimations.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Sumo-Life</title>
+	<link rel="shortcut icon" href="img/ct.ico"></head>
+<body style="overflow: hidden">
+	<div id="orientLayer" class="mod-orient-layer">
+		<div class="mod-orient-layer__content"> <i class="icon-wx mod-orient-layer__icon-orient"></i>
+			<div class="mod-orient-layer__desc">为了更好的体验，请使用竖屏浏览</div>
+		</div>
+	</div>
+
+	<div id="pageWrap">
+		<div class="music-on"></div>
+		<div class="page page-1-1 page-current">
+			<img src="img/1.gif" class="background" style="width:100%;height:100%;z-index:-1; " />
+			<div class="zoom-page">
+				<img class="pt-page-scaleUpIcon" style="width: 250px;height: 300px;position: absolute;top:50%;left:50%;margin-left: -120px;margin-top:-211px" src="img/P1_2.png" />
+				<p class="pt-page-scaleUp pt-page-delay1000" style="font-size: 30px;color:#CD8C95;position: absolute;top:45%;left:50%;margin-left: -105px;margin-top:111px"> <strong>褚甜-前端工程师</strong>
+				</p>
+			</div>
+			<img src="img/arrow.png" class="arrow pt-page-moveIconUp" />
+		</div>
+		<div class="page page-2-1 hide">
+			<img class="background" src="img/bg.png" style="width:100%;height:100%;z-index:-1; "/>
+			<img class="arrow pt-page-moveIconUp"  src="img/arrow.png"/>
+			<div class="zoom-page">
+				<p style="font-size: 24px;color:#CD8C95;position: absolute;top: 10%;left: 15%;" class="pt-page-heartbeat"> <strong>Hi.我叫褚甜,目前大三,正在实习中.</strong>
+				</p>
+				<img class="pt-page-scaleUpIcon" style="width: 250px;height: 300px;position: absolute;top:40%;left:50%;margin-left: -120px;margin-top:-211px" src="img/P1_2.png" />
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 55%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-rotateInNewspaper">立志做一个优雅的前端工程师</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 60%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-rotateInNewspaper">程序员界颜值还可以的妹纸</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 65%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-rotateInNewspaper">平时看点专业书(娱乐视频)一天就过去啦</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 70%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-rotateInNewspaper">喜欢甜食,干果,逛知乎,刷豆瓣,DIY食物</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 75%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-rotateInNewspaper">好吧,其实我是一个不太地道的吃货(...)</p>
+
+			</div>
+		</div>
+		<div class="page page-3-1 hide" >
+			<img class="background" src="img/bg3.png" style="width:100%;height:100%;z-index:-1; "/>
+			<img class="arrow pt-page-moveIconUp"  src="img/arrow.png"/>
+			<div class="zoom-page">
+				<img id="hand" class="pt-page-flash hide" style="width: 36px;height:56px;position: absolute;top: 165px;left: 260px;z-index: 4;" src="img/P3_1.png" />
+
+				<div class="icon-wrap" style="top: 15%;position: absolute">
+					<div class="icon icon0 icon0-hove" iconId="0" style="margin-left: 50px;"></div>
+					<div class="icon icon1" iconId="1" style="margin-left: 46px;"></div>
+					<div class="icon icon2" iconId="2" style="margin-left: 46px;margin-right: 50px;"></div>
+					<div class="icon icon3" iconId="3" style="margin-left: 50px;margin-top: 32px;"></div>
+					<div class="icon icon4" iconId="4" style="margin-left: 46px;margin-top: 32px;"></div>
+					<div class="icon icon5" iconId="5" style="margin-left: 46px;margin-right: 50px;margin-top: 32px;"></div>
+				</div>
+				<div class="text-wrap">
+					<div class="text-container pt-page-moveCircle text0" style="top: 55%"></div>
+					<div class="text-container pt-page-moveCircle text1 hold-hide" style="top: 55%"></div>
+					<div class="text-container pt-page-moveCircle text2 hold-hide" style="top: 55%"></div>
+					<div class="text-container pt-page-moveCircle text3 hold-hide" style="top: 55%"></div>
+					<div class="text-container pt-page-moveCircle text4 hold-hide" style="top: 55%"></div>
+					<div class="text-container pt-page-moveCircle text5 hold-hide" style="top: 55%"></div>
+				</div>
+			</div>
+		</div>
+		<div id="lastPage" class="page page-4-1 hide" >
+			<img class="background" src="img/bg4.png" style="width:100%;height:100%;z-index:-1; "/>
+			<img class="arrow pt-page-moveIconUp"  src="img/arrow.png"/>
+			<div class="zoom-page">
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 25%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-moveFromLeft">
+					<a href="https://github.com/sumodream " target="_blank"><span>Github</span></a>
+					地址,做的项目不多,欢迎围观
+				</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 35%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-moveFromRight">
+					<a href="http://sumodream.github.io/resume/" target="_blank"><span>Resume</span></a>
+					找实习前做的,近期未更新
+				</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 45%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-moveFromLeft">
+					<a href="http://sumoo.cnblogs.com/" target="_blank"><span>Blog</span></a>
+					为了找实习,租房子,貌似长草了
+				</p>
+				<p style="font-size: 24px;color:#CD9B9B;position: absolute;top: 55%;left: 8%;border-left: 6px solid #4fc1e9;padding-left: 10px;" class="pt-page-moveFromRight">
+					<a href="http://sumodream.github.io/ife1/" target="_blank"><span>Ife task1</span></a>
+					任务一啦,第一次移动端献给了百度
+				</p>
+
+			</div>
+		</div>
+		<audio id="audio" loop="loop" src="img/sound.mp3" style="display:none;"></audio>
+	</div>
+</body>
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/pxloader-all.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script src="js/init.js"></script>
+	<script type="text/javascript">
+    var audio = document.getElementById("audio");
+    var basePath = "img/";
+    $(document).ready(function(){
+    	var loader =new PxLoader();
+    	var fileList = [
+    			"arrow_w.png",
+				"arrow.png",
+				"background.png",
+				"icon0_hove.png",
+				"icon0.png",
+				"icon1_hove.png",
+				"icon1.png",
+				"icon2_hove.png",
+				"icon2.png",
+				"icon3_hove.png",
+				"icon3.png",
+				"1.gif",
+				"icon4_hove.png",
+				"icon4.png",
+				"icon5_hove.png",
+				"icon5.png",
+				"P1_2.png",
+				"P1_3.png",
+				"sound.mp3",
+				"sound.png",
+				"text0.png",
+				"text1.png",
+				"text2.png",
+				"text3.png",
+				"text4.png",
+				"text5.png",
+				"bg.png",
+				"bg3.png",
+				"bg4.png"
+    	];
+    	var loadingHeight = 128;
+    	var eachHeight = parseFloat(128/fileList.length);
+    	for(var i = 0 ; i < fileList.length ; i++){
+    		var pxImage = basePath + fileList[i];
+    		pxImage.imageNumber = i + 1;
+    		loader.addImage(pxImage);
+    	}
+    	loader.addCompletionListener(function(){
+    		$("#loading").remove();
+    		$("#pageWrap").css("display","block");
+    		audio.play();
+    	});
+    	loader.addProgressListener(function(e){
+    		var percent = Math.round((e.completedCount / e.totalCount) * 100);
+    		$("#percentWrap").html(percent + "%");
+    		var nowHeight = parseInt($("#loadingCover").css("height(integer)"));
+    		var toHeight = ((nowHeight - eachHeight) > 0?(nowHeight - eachHeight):0+"px");
+    		$("#loadingCover").css("height",toHeight);
+    	});
+    	loader.start();
+    });
+    </script>
+
+</html>
